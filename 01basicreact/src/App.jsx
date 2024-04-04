@@ -1,9 +1,12 @@
-
+import Chai from './Chai.jsx'
 function App() {
   
-
   return (
-    <h1>Chai aur react vite | Paresh</h1>
+    <>
+    <Chai />
+    <h1>chhai aur react</h1>
+    <p>test para</p>
+    </>
   )
 }
 

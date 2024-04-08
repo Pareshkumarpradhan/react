@@ -10,17 +10,17 @@ function App() {
 
   const addValue = () => {
     if(counter < 20){
-      counter = counter + 1
-      setCounter(counter)
-      console.log('Counter Value:', counter)
+      // counter = counter + 1
+      setCounter(counter + 1)
+      // console.log('Counter Value:', counter)
     }
   }
 
   const removeValue = () => {
     if(counter > 0){
-      counter = counter - 1
-      setCounter(counter)
-      console.log('Counter Value:', counter)
+      // counter = counter - 1
+      setCounter(counter - 1)
+      // console.log('Counter Value:', counter)
     }
   }
 

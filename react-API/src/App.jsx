@@ -1,9 +1,9 @@
 
 import './App.css'
-import Dropdown from './components/Dropdown'
+// import Dropdown from './components/Dropdown'
 // import ApiData from './components/ApiData'
 // import ImageSlider from './components/ImageSlider'
-// import PracticeApi from './components/PracticeApi'
+import PracticeApi from './components/PracticeApi'
 // import StateProps from './components/StateProps'
 
 function App() {
@@ -13,10 +13,10 @@ function App() {
     <>
       {/* <h1>Fetch API Data</h1> */}
       {/* <ApiData /> */}
-        {/* <PracticeApi /> */}
+        <PracticeApi />
         {/* <StateProps  country={country}/> */}
         {/* <ImageSlider /> */}
-        <Dropdown />
+        {/* <Dropdown /> */}
     </>
   )
 }

@@ -28,6 +28,7 @@ function Dropdown() {
 
   const cities =
     data.find((item) => item.country === selectCountry)?.city || [];
+    
   return (
     <div>
       <select

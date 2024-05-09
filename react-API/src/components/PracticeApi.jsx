@@ -1,30 +1,41 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
+import { data } from './ConstData'
 
 function PracticeApi() {
-const[data, setData] = useState(null)
-const [loading, setLoading] = useState(true)
-const [error, setError] = useState(null)
 
-useEffect(() => {
-  const fetchData = async () => {
-    try {
-      const response = fetch('https://jsonplaceholder.typicode.com/posts')
-      if(!response.ok){
-        throw new Error("failed to fetch")
-      }
-      const jsonData = await response.json()
-      setData(jsonData)
-      setLoading(false)
-    } catch (error) {
-      setError(error)
-      setLoading(false)
+  const[activeImageIndex, setActiveImageIndex] = useState(0)
+
+  const handlePrev = () => {
+    if(activeImageIndex === 0){
+        setActiveImageIndex(data.length-1)
+    }else{
+      setActiveImageIndex(activeImageIndex - 1)
     }
   }
-  fetchData()
-}, [])
+
+  const handleNext = () => {
+    setActiveImageIndex((activeImageIndex + 1) % data.length)
+  }
+
+  useEffect(() => {
+    setTimeout(() => {
+      handleNext()
+    },2000)
+  },[activeImageIndex])
 
   return (
-    <div>PracticeApi</div>
+    <div className='flex justify-center'>
+      <button className='mr-10 text-xl font-bold' onClick={handlePrev}>Prev</button>
+      {data.map((url, i) => (
+          <img 
+            key={url}
+            src={url} 
+            alt="wallpaper" 
+            className={'w-[700px] h-[500px] object-contain ' + (activeImageIndex === i ? "block" : "hidden")}
+          />
+      ))}
+      <button className='ml-10 text-xl font-bold' onClick={handleNext}>Next</button>
+    </div>
   )
 }
 

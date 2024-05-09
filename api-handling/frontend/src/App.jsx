@@ -4,7 +4,7 @@ import './App.css'
 import { useEffect } from 'react'
 import axios from 'axios'
 
-function App() {
+function App() { 
  const[products, setProducts] = useState([])
  const[error, setError] = useState(false)
  const [loading, setLoading] = useState(false)

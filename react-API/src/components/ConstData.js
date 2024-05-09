@@ -1,7 +1,7 @@
 export const data = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf7PLlaiWYItwH7-oFXzO5cMIAkiPV-gLMjg&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOwfiKZhqnv3opxFI0WVgi7ZLh3mVXlUo0Nw&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYhSKAn0i4mjIAzcenUU2E7c9h-IoLbtg-zw&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRJZ_huHAiuFQ57MRFC_HtxYAA8SlFZHMxDg&s",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEonFQ5_aLev0KVFx-fiAxCxk9LxtFROmORQ&s",
+    "https://images.pexels.com/photos/2747600/pexels-photo-2747600.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/19882695/pexels-photo-19882695/free-photo-of-concrete-breakers-on-the-sea-coast.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    "https://images.pexels.com/photos/12715981/pexels-photo-12715981.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    "https://images.pexels.com/photos/20436787/pexels-photo-20436787/free-photo-of-a-snow-capped-mountain-is-seen-at-dusk.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+    "https://images.pexels.com/photos/22703015/pexels-photo-22703015/free-photo-of-cafe.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
   ];
